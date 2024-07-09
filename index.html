@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Details Form</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="cloth-container">
+        <h2>ENTER CLOTH DETAILS</h2>
+        <form id="clothForm">
+
+            <div class="form-group">
+                <label for="category">CATEGORY:</label>
+                <div class="category-options">
+                    <label for="saree"> <input type="checkbox" id="saree" name="category[]" value="saree"> SAREE</label>
+                    <label for="pant"> <input type="checkbox" id="shirt" name="category[]" value="shirt"> SHIRT</label>
+                    <label for="dairy"> <input type="checkbox" id="pant" name="category[]" value="pant"> PANT </label>
+                    <label for="frock"> <input type="checkbox" id="frock" name="category[]" value="frock"> FROCK </label>
+                    <label for="all"> <input type="checkbox" id="all" name="category[]" value="all"> ALL</label>
+                    <label for="others"> <input type="checkbox" id="others" name="category[]" value="others"> OTHER </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="clothName">If other,mention TYPE OF CLOTH:</label>
+                <input type="text" id="clothName" name="clothName[]" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="clothDescription">CLOTH DESCRIPTION:</label>
+                <textarea id="clothDescription" name="clothDescription[]" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="pickupDate">PICKUP DATE:</label>
+                <input type="date" id="pickupDate" name="pickupDate[]" required>
+            </div>
+            <div class="form-group">
+                <label for="clothImage">CLOTH IMAGE:</label>
+                <input type="file" id="clothImage" name="clothImage[]" accept="image/*" required>
+            </div>
+
+            
+            
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+    <script src="scriptsscloth.js"></script>
+</body>
+</html>
